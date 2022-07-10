@@ -52,29 +52,30 @@ function App() {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <nav>
-        <Navbar openMenu={() => handleOpen()} />
-        <Box component="nav">
-          <Drawer
-            variant="temporary"
-            open={openMenuMobile}
-            onClose={handleOpen}
-            ModalProps={{
-              keepMounted: true, // Better open performance on mobile.
-            }}
-            sx={{
-              display: { xs: "block", sm: "none" },
-              "& .MuiDrawer-paper": {
-                boxSizing: "border-box",
-                width: menuMobileWidth,
-              },
-            }}
-          >
-            {mobileMenu}
-          </Drawer>
-        </Box>
-      </nav>
-      <header></header>
+      <header>
+        <nav>
+          <Navbar openMenu={() => handleOpen()} />
+          <Box component="nav">
+            <Drawer
+              variant="temporary"
+              open={openMenuMobile}
+              onClose={handleOpen}
+              ModalProps={{
+                keepMounted: true, // Better open performance on mobile.
+              }}
+              sx={{
+                display: { xs: "block", sm: "none" },
+                "& .MuiDrawer-paper": {
+                  boxSizing: "border-box",
+                  width: menuMobileWidth,
+                },
+              }}
+            >
+              {mobileMenu}
+            </Drawer>
+          </Box>
+        </nav>
+      </header>
       <main>
         <Box sx={{ p: 3 }}>
           <Toolbar />

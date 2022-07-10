@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./navbar.css";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -12,11 +11,6 @@ type Item = {
   label: string;
   href: string;
 };
-
-interface Props {
-  window?: () => Window;
-  children: React.ReactElement;
-}
 
 export const navItems: Item[] = [
   { label: "Inicio", href: "/" },
