@@ -1,0 +1,25 @@
+.banner {
+  display: flex;
+  background-image: url("../../assets/images/banner_fausto.svg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .MuiTypography-h2 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .MuiTypography-h2 {
+    font-size: 1.7rem !important;
+  }
+  .MuiTypography-h5 {
+    font-size: 1rem !important;
+  }
+}
